@@ -1,0 +1,32 @@
+body {
+  background-color: lightblue;
+  color: black;
+}
+
+header {
+  font-size: 100px;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 30px;
+}
+
+img {
+  width: 695px;
+}
+
+h2 {
+  text-decoration: underline;
+}
