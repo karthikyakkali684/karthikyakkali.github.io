@@ -1,32 +1,96 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background-color: lightblue;
-  color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background: #0044cc;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header {
-  font-size: 100px;
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
 }
 
-body {
-  text-align: center;
+.hero-bubble {
+    border: 3px dashed #0044cc;
+    border-radius: 50px;
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 20px 0;
 }
 
-h1 {
-  font-size: 75px;
+.info-card {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #eef4ff;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-h2 {
-  font-size: 48px;
+.section-title {
+    text-align: center;
+    margin-top: 40px;
 }
 
-p {
-  font-size: 30px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
 }
 
-img {
-  width: 695px;
+.box {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 }
 
-h2 {
-  text-decoration: underline;
+.box.picture {
+    padding: 0;
+    min-height: 200px;
+}
+
+/* This ensures all pictures look uniform and fit the boxes */
+.hobby-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
